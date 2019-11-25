@@ -16,54 +16,20 @@ const initializeDetailButtonEvents = () => {
 
     // You will be writing code below this line
 
-    // Show Bart's details when the button is clicked
-    document.querySelector("#button--Bitey").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details--Bitey")
-            theDialog.showModal()
-        }
-    )
 
-    document.querySelector("#button--Jawsie").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details--Jawsie")
-            theDialog.showModal()
-        }
-    )
+    // Get a reference to all buttons that start with "button--"
+    const allDetailButtons = document.querySelectorAll("button[id^='button--']");
 
-    document.querySelector("#button--Mr\\.\\ Bubbles").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details--Mr\\.\\ Bubbles")
-            theDialog.showModal()
-        }
-    )
-
-    document.querySelector("#button--Mrs\\.\\ Dangles").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details--Mrs\\.\\ Dangles")
-            theDialog.showModal()
-        }
-    )
-
-    document.querySelector("#button--Barry").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details--Barry")
-            theDialog.showModal()
-        }
-    )
-
-    document.querySelector("#button--Snappy").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details--Snappy")
-            theDialog.showModal()
-        }
-    )
+    for (const btn of allDetailButtons) {
+        btn.addEventListener(
+            "click", 
+            theEvent => {
+                const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+                const theDialog = document.querySelector(dialogSiblingSelector)
+                theDialog.showModal();
+            }
+        )
+    }
 
 }
 

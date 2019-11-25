@@ -11,12 +11,12 @@ body {
   flex-wrap: wrap;
 }
 
-img {
+.fish__image {
   max-width: 100%;
 }
 
 aside{
-  flex-basis: 30%;
+  flex-basis: 26%;
   border: 1px solid red;
   padding: 0 5px;
 }

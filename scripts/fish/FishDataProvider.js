@@ -6,7 +6,7 @@ const fishCollection = [
         species: "Piranha",
         location: "Brazil",
         length: 4,
-        food: "Humans",
+        food: ["Humans"],
         image: "pics/piranha.png",
     },
     {
@@ -14,7 +14,7 @@ const fishCollection = [
         species: "Shark",
         location: "South Africa",
         length: 264,
-        food: "Seals",
+        food: ["Seals"],
         image: "pics/left-shark.jpg",
     },
     {
@@ -22,7 +22,7 @@ const fishCollection = [
         species: "Goldfish",
         location: "PetSmart",
         length: 2,
-        food: "Flakes",
+        food: ["Flakes"],
         image: "pics/goldie-fish.jpg",
     },
     {
@@ -30,7 +30,7 @@ const fishCollection = [
         species: "Angler Fish",
         location: "Mariana Trench",
         length: 12,
-        food: "Minnows",
+        food: ["Minnows"],
         image: "pics/angler.jpg",
     },
     {
@@ -38,7 +38,7 @@ const fishCollection = [
         species: "Barracuda",
         location: "Coral Reefs",
         length: 70,
-        food: "Salmon",
+        food: ["Salmon"],
         image: "pics/barry.jpg",
     },
     {
@@ -46,9 +46,9 @@ const fishCollection = [
         species: "Red Snapper",
         location: "Gulf of Mexico",
         length: 30,
-        food: "Eels",
+        food: ["Eels"],
         image: "pics/red-snapper.jpg",
-    },
+    }
 ]
 
 export const useFish = () => {

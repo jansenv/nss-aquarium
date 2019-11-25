@@ -1,12 +1,12 @@
-.fishies {
+.fishList {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 68%;
+    flex-basis: 70%;
     justify-content: space-evenly;
   }
   
-  .fishies__card {
-    flex-basis: 28%;
+  .fish {
+    flex-basis: 35%;
     width: 28%;
     border: 2px dotted gray;
     padding: 0 8px;
@@ -21,7 +21,7 @@
   
   
   @media (max-width: 600px) {
-    .fishies {
+    .fishList {
        flex-basis: 100%;
     }
   
